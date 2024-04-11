@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sri Lanka Career Website</title>
+    <!-- Add your CSS file here -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: white;
+        }
+      h1{
+        font-size:40px;
+        font-family: Roboto;
+        font-weight: normal;
+        color: rgb(50,50,150)
+        text-align: center;
+      }
+      #banner{
+         width:100%;
+         height:360px;
+        object-fit: cover;
+      }
+      h2{
+        font-size:32px;
+        font-family: Roboto;
+        font-weight: normal;
+        color: rgb(50,50,100);
+        text-align: center;
+      }
+      .bodytext{
+        font-family: Roboto;
+        color:rgb(80,80,80)
+      }
+    #container{
+      max-width:720px;
+      margin:0 auto 0 auto;
+    }
+    </style>
+</head>
+<body>
+  <div id='container'>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Welcome to Sri Lanka Career Website</h1>
+        <p class='bodytext'>Find your dream job in Sri Lanka.</p>
+        <img id='banner'src='https://f033611a-5f9d-455e-80da-84f7210f562e-00-1dhylmw7piql4.pike.replit.dev/static/Banner.jpg' height='320'  alt="Banner image showcasing Sri Lanka Career Website">
+      <h2>About Us</h2>
+      <p class='bodytext'>>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
+      <h2>Open Positions</h2>
+      <p class='bodytext'>TODO- SHow the jobs here</p>
+        <form action="filter_jobs.php" method="get">
+            <label for="job_title">Job Title:</label>
+            <input type="text" id="job_title" name="job_title">
+            <button type="submit">Filter Jobs</button>
+        </form>
+        <h2>Latest Jobs</h2>
+        <ul>
+            <!-- Add job listings here -->
+            <li>
+                <h3>Software Engineer</h3>
+                <p class='bodytext'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
+                <a href="job_details.php?id=1">Apply</a>
+            </li>
+            <!-- Add more job listings here -->
+        </ul>
+      <div style="text-align:center;">
+      <button>Contact Us</button>
+      </div>  
+    </main>
+    <footer>
+        <p>&copy; 2023 Sri Lanka Career Website. All rights reserved.</p>
+    </footer>
+  </div>  
+</body>
+</html>
